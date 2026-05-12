@@ -1,0 +1,36 @@
+Requirements for Barry Arm Rockfall Infrasound Monitoring
+
+Install into a conda environment with:
+  pip install -r requirements.txt
+
+Or recreate the full environment with:
+  conda install --file requirements.txt
+
+Python version: 3.10.19
+
+Core
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.1.4
+
+Geophysical waveform processing
+obspy==1.4.2
+
+Infrasound array processing (install via pip)
+pip install lts-array
+lts-array==2.0
+
+Geospatial
+geopandas==1.0.1
+pyproj==3.6.1
+shapely==2.0.5
+rasterio==1.4.3
+
+Plotting
+matplotlib==3.10.8
+
+Machine learning (used in 05_analysis_and_plots.py)
+scikit-learn==1.7.1
+
+Timezone handling (used in 05_analysis_and_plots.py for weather data)
+pytz==2025.2
